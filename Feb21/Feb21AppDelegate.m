@@ -18,7 +18,7 @@
 	CGRect applicationFrame = screen.applicationFrame; /*create CGRect object and assign it the size of the UIScreen's Frame*/
 	CGRect bounds = screen.bounds; /*create CGRect object and assign it the size of the UIScreen's bounds*/
     view = [[View alloc] initWithFrame: applicationFrame]; /*allocate and initialize the view*/
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window = [[UIWindow alloc] initWithFrame: bounds];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window addSubview: view]; /*adding the view?*/
